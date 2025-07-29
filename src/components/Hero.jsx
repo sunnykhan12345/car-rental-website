@@ -64,6 +64,7 @@ const Hero = () => {
         alt="main-cars"
         className="max-h-74  max-w-74 w-full h-full object-cover"
       />
+      
     </div>
   );
 };
