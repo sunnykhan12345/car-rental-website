@@ -20,6 +20,7 @@ import Home from "./pages/Home";
 import Cars from "./pages/Cars";
 import CarsDetails from "./pages/CarsDetails";
 import MyBooking from "./pages/MyBooking";
+import { Footer } from "./components/Footer";
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false); 
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/cars" element={<Cars />} />
         <Route path="/my-bookings" element={<MyBooking />} />
       </Routes>
+      <Footer />
     </>
   );
 };
