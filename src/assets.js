@@ -1,4 +1,7 @@
 import car_image1 from "./assets/main-car.png";
+import car_image2 from "./assets/tasla.png";
+import car_image3 from "./assets/ta.jpg";
+import car_image4 from "./assets/taa.png";
 
 export const MenuLinks = [
   { name: "Home", path: "/" },
@@ -36,7 +39,7 @@ export const DummycarData = [
     owner: "67fe3467ed8a8fe17d0ba6e2",
     brand: "Tesla",
     model: "Model 3",
-    image: car_image1,
+    image: car_image2,
     year: 2022,
     category: "Sedan",
     seating_capacity: 5,
@@ -54,7 +57,7 @@ export const DummycarData = [
     owner: "67fe3467ed8a8fe17d0ba6e2",
     brand: "Toyota",
     model: "Camry",
-    image: car_image1,
+    image: car_image3,
     year: 2019,
     category: "Sedan",
     seating_capacity: 5,
@@ -72,7 +75,7 @@ export const DummycarData = [
     owner: "67fe3467ed8a8fe17d0ba6e2",
     brand: "Ford",
     model: "F-150",
-    image: car_image1,
+    image: car_image4,
     year: 2021,
     category: "Truck",
     seating_capacity: 5,
@@ -86,4 +89,3 @@ export const DummycarData = [
     createdAdt: "2025-07-20T08:10:11.789Z",
   },
 ];
-
