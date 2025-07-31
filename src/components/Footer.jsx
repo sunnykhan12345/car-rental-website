@@ -118,3 +118,184 @@ export const Footer = () => {
     </div>
   );
 };
+
+
+
+
+
+
+// import Image from "next/image";
+// import Link from "next/link";
+// import { Plane, Menu } from "lucide-react";
+// import { Button } from "@/components/ui/button";
+
+// export default function Homepage() {
+//   return (
+//     <div className="min-h-screen bg-white">
+//       {/* Top Contact Bar */}
+//       <div className="bg-[#ff6600] py-2 text-white text-sm flex justify-end px-4 md:px-8 lg:px-16">
+//         <div className="flex flex-col md:flex-row md:space-x-4">
+//           <span className="whitespace-nowrap">info@binhamaviation.com</span>
+//           <span className="hidden md:inline">|</span>
+//           <span className="whitespace-nowrap">+92 (335) 6777777</span>
+//           <span className="hidden md:inline">|</span>
+//           <span className="whitespace-nowrap">+92 (311) 9843152</span>
+//           <span className="hidden md:inline">|</span>
+//           <span className="whitespace-nowrap">+92 (334) 5421633</span>
+//         </div>
+//       </div>
+
+//       {/* Navigation Bar */}
+//       <nav className="bg-white shadow-sm py-4 px-4 md:px-8 lg:px-16 flex items-center justify-between relative z-10">
+//         <div className="flex items-center">
+//           <h1 className="text-2xl font-bold text-gray-800">Binham Group</h1>
+//         </div>
+//         <div className="hidden lg:flex items-center space-x-8">
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             Home
+//           </Link>
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             Destinations
+//           </Link>
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             Domestic
+//           </Link>
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             International
+//           </Link>
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             Umrah
+//           </Link>
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             Visa
+//           </Link>
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             Gallery
+//           </Link>
+//           <Link
+//             href="#"
+//             className="text-gray-700 hover:text-[#ff6600] font-medium"
+//           >
+//             About Us
+//           </Link>
+//           <Button className="bg-[#ff6600] hover:bg-orange-700 text-white px-6 py-2 rounded-full">
+//             Contact Us
+//           </Button>
+//         </div>
+//         <div className="lg:hidden">
+//           <Button variant="ghost" size="icon" aria-label="Toggle menu">
+//             <Menu className="h-6 w-6" />
+//           </Button>
+//         </div>
+//       </nav>
+
+//       {/* Hero Section */}
+//       <main className="relative w-full h-[calc(100vh-120px)] md:h-[calc(100vh-100px)] overflow-hidden flex items-center justify-center">
+//         <Image
+//           src="/images/hero-bg.png"
+//           alt="Tropical beach background"
+//           layout="fill"
+//           objectFit="cover"
+//           quality={100}
+//           className="z-0"
+//         />
+
+//         {/* Central Content */}
+//         <div className="relative z-10 text-white text-center flex flex-col items-center justify-center p-4">
+//           <h2 className="text-6xl md:text-8xl lg:text-9xl font-extrabold leading-none drop-shadow-lg flex items-center">
+//             Binham
+//             <Plane className="w-16 h-16 md:w-24 md:h-24 lg:w-32 lg:h-32 mx-2 text-[#ff6600]" />
+//             Group
+//           </h2>
+//           <p className="mt-8 text-lg md:text-xl lg:text-2xl font-semibold drop-shadow-md">
+//             www.binhamaviation.com
+//           </p>
+//         </div>
+
+//         {/* Smaller Images (Polaroid style) */}
+//         <div className="absolute z-10 w-full h-full">
+//           {/* Image 1: Istanbul (Top Left) */}
+//           <div className="absolute top-[15%] left-[5%] md:top-[20%] md:left-[10%] lg:top-[25%] lg:left-[15%] w-[150px] h-[100px] md:w-[200px] md:h-[130px] lg:w-[250px] lg:h-[160px] bg-white p-2 shadow-lg rotate-[-10deg]">
+//             <Image
+//               src="/images/istanbul.png"
+//               alt="Istanbul cityscape"
+//               layout="fill"
+//               objectFit="cover"
+//               className="border border-gray-200"
+//             />
+//           </div>
+
+//           {/* Image 2: Dubai (Bottom Left) */}
+//           <div className="absolute bottom-[15%] left-[10%] md:bottom-[20%] md:left-[15%] lg:bottom-[25%] lg:left-[20%] w-[150px] h-[100px] md:w-[200px] md:h-[130px] lg:w-[250px] lg:h-[160px] bg-white p-2 shadow-lg rotate-[10deg]">
+//             <Image
+//               src="/images/dubai.png"
+//               alt="Dubai modern building"
+//               layout="fill"
+//               objectFit="cover"
+//               className="border border-gray-200"
+//             />
+//           </div>
+
+//           {/* Image 3: Kuala Lumpur (Top Right) */}
+//           <div className="absolute top-[15%] right-[5%] md:top-[20%] md:right-[10%] lg:top-[25%] lg:right-[15%] w-[150px] h-[100px] md:w-[200px] md:h-[130px] lg:w-[250px] lg:h-[160px] bg-white p-2 shadow-lg rotate-[15deg]">
+//             <Image
+//               src="/images/kuala-lumpur.png"
+//               alt="Kuala Lumpur skyline"
+//               layout="fill"
+//               objectFit="cover"
+//               className="border border-gray-200"
+//             />
+//           </div>
+
+//           {/* Image 4: Beach Scene (Bottom Right) */}
+//           <div className="absolute bottom-[15%] right-[10%] md:bottom-[20%] md:right-[15%] lg:bottom-[25%] lg:right-[20%] w-[150px] h-[100px] md:w-[200px] md:h-[130px] lg:w-[250px] lg:h-[160px] bg-white p-2 shadow-lg rotate-[-5deg]">
+//             <Image
+//               src="/images/beach-scene.png"
+//               alt="Secluded beach scene"
+//               layout="fill"
+//               objectFit="cover"
+//               className="border border-gray-200"
+//             />
+//           </div>
+
+//           {/* Swirl Graphics */}
+//           <Image
+//             src="/images/orange-swirl.png"
+//             alt="Orange swirl graphic"
+//             width={150}
+//             height={150}
+//             className="absolute top-[30%] left-[25%] md:top-[35%] md:left-[30%] lg:top-[40%] lg:left-[35%] w-[100px] h-[100px] md:w-[150px] md:h-[150px] opacity-80"
+//           />
+//           <Image
+//             src="/images/white-swirl.png"
+//             alt="White swirl graphic"
+//             width={150}
+//             height={150}
+//             className="absolute bottom-[30%] right-[25%] md:bottom-[35%] md:right-[30%] lg:bottom-[40%] lg:right-[35%] w-[100px] h-[100px] md:w-[150px] md:h-[150px] opacity-80"
+//           />
+//         </div>
+//       </main>
+//     </div>
+//   );
+// }

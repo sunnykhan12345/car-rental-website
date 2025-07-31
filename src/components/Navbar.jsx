@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-3 text-gray-600 border-b border-bordercolor relative transition-all
+      className={`flex z-10 items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-3 text-gray-600 border-b border-bordercolor relative transition-all
    ${location.pathname === "/" && "bg-light"}`}
     >
       <Link to="/" className="text-4xl font-bold">

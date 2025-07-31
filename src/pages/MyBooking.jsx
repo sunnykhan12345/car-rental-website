@@ -1,7 +1,10 @@
-import React from 'react'
-
+import car from "../assets/bin.png";
 const MyBooking = () => {
-  return <div>MyBooking</div>;
-}
+  return (
+    <div className="h-screen">
+      <img src={car} alt="car" className="w-full  object-cover h-full" />
+    </div>
+  );
+};
 
-export default MyBooking
+export default MyBooking;
