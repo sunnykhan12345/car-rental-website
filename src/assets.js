@@ -9,6 +9,13 @@ export const MenuLinks = [
   { name: "My Booking", path: "/my-bookings" },
 ];
 
+export const dummyUserData = {
+  _id: "68447f7cab3d8dacedb517096",
+  name: "sunny khan",
+  email: "sunnykhansadda@gmail.com",
+  role: "owner",
+  image: car_image1,
+};
 export const CityList = [
   { name: "Peshawar", value: "peshawar" },
   { name: "Islamabad", value: "islamabad" },
@@ -87,5 +94,51 @@ export const DummycarData = [
       "The Ford F-150 is a full-size pickup truck known for its strength, durability, and towing capabilities — perfect for heavy-duty jobs.",
     isAvailable: "false",
     createdAdt: "2025-07-20T08:10:11.789Z",
+  },
+];
+export const DummyBookingData = [
+  {
+    _id: "68482bcc98eb9722b7751f70",
+    car: DummycarData[0],
+    user: "68487732bcc98eb9722b7751f95",
+    owner: "68487732bcc98eb9722b7751f95",
+    pickupDate: "2025-06-13T00:00:00.000z",
+    returndate: "2025-06-14T00:00:00.000z",
+    status: "confirmed",
+    price: 400,
+    createdAt: "2025-06-10T12:57:48.244z",
+  },
+  {
+    _id: "68482bcc98eb9722b7751f70",
+    car: DummycarData[1],
+    user: "68487732bcc98eb9722b7751f95",
+    owner: "68487732bcc98eb9722b7751f95",
+    pickupDate: "2025-06-13T00:00:00.000z",
+    returndate: "2025-06-14T00:00:00.000z",
+    status: "pending",
+    price: 200,
+    createdAt: "2025-06-10T12:57:48.244z",
+  },
+  {
+    _id: "68482bcc98eb9722b7751f70",
+    car: DummycarData[2],
+    user: "68487732bcc98eb9722b7751f95",
+    owner: "68487732bcc98eb9722b7751f95",
+    pickupDate: "2025-06-13T00:00:00.000z",
+    returndate: "2025-06-14T00:00:00.000z",
+    status: "confirmed",
+    price: 800,
+    createdAt: "2025-06-10T12:57:48.244z",
+  },
+  {
+    _id: "68482bcc98eb9722b7751f70",
+    car: DummycarData[3],
+    user: "68487732bcc98eb9722b7751f95",
+    owner: "68487732bcc98eb9722b7751f95",
+    pickupDate: "2025-06-13T00:00:00.000z",
+    returndate: "2025-06-14T00:00:00.000z",
+    status: "confirmed",
+    price: 400,
+    createdAt: "2025-06-10T12:57:48.244z",
   },
 ];
