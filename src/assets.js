@@ -2,6 +2,7 @@ import car_image1 from "./assets/main-car.png";
 import car_image2 from "./assets/tasla.png";
 import car_image3 from "./assets/ta.jpg";
 import car_image4 from "./assets/taa.png";
+import car_image11 from "./assets/sunny.jpg";
 
 export const MenuLinks = [
   { name: "Home", path: "/" },
@@ -14,7 +15,7 @@ export const dummyUserData = {
   name: "sunny khan",
   email: "sunnykhansadda@gmail.com",
   role: "owner",
-  image: car_image1,
+  image: car_image11,
 };
 export const CityList = [
   { name: "Peshawar", value: "peshawar" },
