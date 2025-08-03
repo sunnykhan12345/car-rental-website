@@ -3,11 +3,38 @@ import car_image2 from "./assets/tasla.png";
 import car_image3 from "./assets/ta.jpg";
 import car_image4 from "./assets/taa.png";
 import car_image11 from "./assets/sunny.jpg";
+import { BookDashed, Car } from "lucide-react";
 
 export const MenuLinks = [
   { name: "Home", path: "/" },
   { name: "Cars", path: "/cars" },
   { name: "My Booking", path: "/my-bookings" },
+];
+export const ownerMenuLinks = [
+  {
+    name: "Dashboard",
+    path: "/owner",
+    icon: BookDashed,
+    coloredIcon: BookDashed,
+  },
+  {
+    name: "Add car",
+    path: "/owner/add-car",
+    icon: Car,
+    coloredIcon: Car,
+  },
+  {
+    name: "Manage Cars",
+    path: "/owner/manage-cars",
+    icon: Car,
+    coloredIcon: Car,
+  },
+  {
+    name: "Manage Bookings",
+    path: "/owner/manage-bookings",
+    icon: Car,
+    coloredIcon: Car,
+  },
 ];
 
 export const dummyUserData = {
