@@ -19,19 +19,19 @@ export const ownerMenuLinks = [
   },
   {
     name: "Add car",
-    path: "/owner/add-car",
+    path: "/owner/add-cart",
     icon: Car,
     coloredIcon: Car,
   },
   {
     name: "Manage Cars",
-    path: "/owner/manage-cars",
+    path: "/owner/manage-car",
     icon: Car,
     coloredIcon: Car,
   },
   {
     name: "Manage Bookings",
-    path: "/owner/manage-bookings",
+    path: "/owner/manage-booking",
     icon: Car,
     coloredIcon: Car,
   },
@@ -167,6 +167,30 @@ export const DummyBookingData = [
     returndate: "2025-06-14T00:00:00.000z",
     status: "confirmed",
     price: 400,
+    createdAt: "2025-06-10T12:57:48.244z",
+  },
+];
+export const DummyDashboardgData = [
+  {
+    _id: "68482bcc98eb9722b7751f70",
+    car: DummycarData[0],
+    user: "68487732bcc98eb9722b7751f95",
+    owner: "68487732bcc98eb9722b7751f95",
+    pickupDate: "2025-06-13T00:00:00.000z",
+    returndate: "2025-06-14T00:00:00.000z",
+    status: "confirmed",
+    price: 400,
+    createdAt: "2025-06-10T12:57:48.244z",
+  },
+  {
+    _id: "68482bcc98eb9722b7751f78",
+    car: DummycarData[1],
+    user: "68487732bcc98eb9722b7751f95",
+    owner: "68487732bcc98eb9722b7751f95",
+    pickupDate: "2025-06-13T00:00:00.000z",
+    returndate: "2025-06-14T00:00:00.000z",
+    status: "pending",
+    price: 300,
     createdAt: "2025-06-10T12:57:48.244z",
   },
 ];
