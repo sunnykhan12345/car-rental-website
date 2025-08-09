@@ -53,6 +53,7 @@ const AddCart = () => {
         {/* car brand & model */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col w-full">
+            <label>Brand</label>
             <input
               type="text"
               placeholder="e.g BMW, Mercedes, Audi..."
@@ -63,16 +64,128 @@ const AddCart = () => {
             />
           </div>
           <div className="flex flex-col w-full">
+            <label>Model</label>
             <input
               type="text"
-              placeholder="e.g BMW, Mercedes, Audi..."
+              placeholder="e.g X5,E-class , Audi..."
               required
               className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
-              value={car.brand}
-              onChange={(e) => setCar({ ...car, brand: e.target.value })}
+              value={car.model}
+              onChange={(e) => setCar({ ...car, model: e.target.value })}
             />
           </div>
         </div>
+        {/* car year price category */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-col w-full">
+            <label>Year</label>
+            <input
+              type="number"
+              placeholder="2025"
+              required
+              className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+              value={car.year}
+              onChange={(e) => setCar({ ...car, year: e.target.value })}
+            />
+          </div>
+          <div className="flex flex-col w-full">
+            <label>Daily Price $</label>
+            <input
+              type="number"
+              placeholder="100"
+              required
+              className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+              value={car.pricePerDay}
+              onChange={(e) => setCar({ ...car, pricePerDay: e.target.value })}
+            />
+          </div>
+          <div className="flex flex-col w-full ">
+            <label>Category</label>
+            <select
+              onChange={(e) => setCar({ ...car, category: e.target.value })}
+              value={car.category}
+              className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+            >
+              <option value="">Select a ategory</option>
+              <option value="sedan">Sedan</option>
+              <option value="SUV">SUV</option>
+              <option value="Van">Van</option>
+            </select>
+          </div>
+        </div>
+        {/* car transmiosn ,ful type seating capicaty */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-col w-full ">
+            <label>Transmission</label>
+            <select
+              onChange={(e) => setCar({ ...car, transmission: e.target.value })}
+              value={car.transmission}
+              className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+            >
+              <option value="">Select a transmission</option>
+              <option value="Automatic">Automatic</option>
+              <option value="Manual">Manual</option>
+              <option value="Semi-Automatic">Semi-Automatic</option>
+            </select>
+          </div>
+          <div className="flex flex-col w-full ">
+            <label>Fuel Type</label>
+            <select
+              onChange={(e) => setCar({ ...car, fuel_type: e.target.value })}
+              value={car.fuel_type}
+              className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+            >
+              <option value="">Select a fuel type</option>
+              <option value="Gas">Gas</option>
+              <option value="Diesel">Diesel</option>
+              <option value="petrol">Petrol</option>
+              <option value="Electric">Electric</option>
+              <option value="Hybrid">Hybrid</option>
+            </select>
+          </div>
+          <div className="flex flex-col w-full">
+            <label>Seating Capacity</label>
+            <input
+              type="number"
+              placeholder="4"
+              required
+              className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+              value={car.seating_capacity}
+              onChange={(e) =>
+                setCar({ ...car, seating_capacity: e.target.value })
+              }
+            />
+          </div>
+        </div>
+        <div className="flex flex-col w-full ">
+          <label>Location</label>
+          <select
+            onChange={(e) => setCar({ ...car, location: e.target.value })}
+            value={car.location}
+            className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+          >
+            <option value="">Select a location</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Houston">Houston</option>
+            <option value="Electric">Electric</option>
+            <option value="Chicago">Chicago</option>
+          </select>
+        </div>
+        {/* car descriptions */}
+        <div className="flex flex-col w-full">
+          <label>Description</label>
+          <textarea
+         
+            placeholder="e.g A luxurious SUV with a spacious interior and a powerful engine."
+            required
+            className="px-3 py-2 mt-1 border border-bordercolor rounded-md outline-none"
+            value={car.description}
+            onChange={(e) => setCar({ ...car, description: e.target.value })}
+          >
+            </textarea>
+        </div>
+        <button className="flex items-center gap-2 px-4 py-2.5 mt-4 bg-primary text-white rounded-md font-medium w-max cursor-pointer">List Your Car</button>
       </form>
     </div>
   );
