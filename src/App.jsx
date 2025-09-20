@@ -12,14 +12,17 @@ import ManageCar from "./pages/owner/ManageCar";
 import ManageBookings from "./pages/owner/ManageBookings";
 import { useState } from "react";
 import { Toaster } from "react-hot-toast";
+import Login from "./components/Login";
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
 
   return (
     <>
       <Toaster />
+      {showLogin && <Login setShowLogin={setShowLogin} />}
+
       <Navbar setShowLogin={setShowLogin} />
-      {showLogin && <div>Login Modal Goes Here</div>}
+      {showLogin}
 
       <Routes>
         <Route path="/" element={<Home />} />
