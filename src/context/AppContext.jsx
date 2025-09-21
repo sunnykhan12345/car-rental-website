@@ -20,7 +20,7 @@ export const AppProivder = ({ children }) => {
   // function to chec is user logedin
   const fetchUser = async () => {
     try {
-      const { data } = await axios.fetch("/api/user/data");
+      const { data } = await axios.get("/api/user/data");
       if (data.success) {
         setUser(data.user);
         setIsOwener(data.user.role === "owner");
