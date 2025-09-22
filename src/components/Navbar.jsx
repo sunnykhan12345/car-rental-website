@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { MenuLinks } from "../assets";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Home, LogOut, MenuIcon, Search } from "lucide-react";
+import { LogOut, MenuIcon, Search } from "lucide-react";
 import { useAppContext } from "../context/AppContext";
 import toast from "react-hot-toast";
 const Navbar = () => {
-  const { setShowLogin, user, isOwner, axios, setIsOwener } = useAppContext();
+  const { setShowLogin, user, isOwner, axios, setIsOwener, logOut } =
+    useAppContext();
   const location = useLocation();
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
@@ -63,7 +64,7 @@ const Navbar = () => {
 
           <button
             onClick={() => {
-              user ? LogOut() : setShowLogin(true);
+              user ? logOut() : setShowLogin(true);
             }}
             className="cursor-pointer px-8 py-2 text-white bg-primary hover:bg-primary-dull rounded-lg transition-all"
           >
